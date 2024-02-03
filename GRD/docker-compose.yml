@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  server:
+    build: .
+    container_name: poetry_c
+    ports:
+      - "1010:1010"
+    volumes:
+      - ./grd:/poetry_app/grd:rw,cached
